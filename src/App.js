@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState} from 'react'
+import './App.sass'
 
 function App() {
+  // const [isLoading, setLoading] = useState(true)
+  // function fakeRequest(){
+  //   return new Promise(resolve => setTimeout(()=>resolve(),2500))
+  // }
+  // useEffect(()=>{
+  //   fakeRequest().then(()=>{
+  //     const el = document.querySelector(".loader-container")
+  //     if(el){
+  //       el.remove()
+  //       setLoading(!isLoading)
+  //     }
+  //   })
+  // },[])
+  // document.onreadystatechange = function(){
+  //   if(document.readyState !== 'complete'){
+  //     document.querySelector('body').style.visibility = "hidden"
+  //     document.querySelector(".loader-container").style.visibility = "visible"
+  //   }
+  //   else {
+  //     document.querySelector(".loader-container").style.visibility = "none"
+  //     document.querySelector('body').style.visibility = "visible"
+  //   }
+  // }
+  // useEffect(()=>{
+    
+  // })
+  // if(isLoading){
+  //   return null
+  // }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Gursimran Singh</h1>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
