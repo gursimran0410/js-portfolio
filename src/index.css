@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 body{
     margin: 0;
-    background-color: #f4f6f8;
+    background-color: black;
 }
 .loader{
     border: 16px solid #f3f3f3;
