@@ -1,0 +1,29 @@
+body{
+  margin: 0px; 
+}
+#app{
+  .cover-img{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+  }
+  .content{
+    height: 100vh;
+  }
+  .navbar{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    border-bottom: none;
+    transition: border-bottom 0.2s ease;
+  }
+  .pencil-text{
+    display: inline-block;
+    position: relative;
+    font-size: 25pt;
+    transform: scale(12);
+    bottom: 140px;
+    top: auto;
+    font-family: 'Courier New', Courier, monospace;
+  }
+}
