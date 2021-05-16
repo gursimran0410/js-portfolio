@@ -1,29 +1,48 @@
-body{
-  margin: 0px; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --gradient: linear-gradient(45deg, #845EC2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
 }
+
 #app{
-  .cover-img{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-  }
-  .content{
-    height: 100vh;
-  }
-  .navbar{
-    position: relative;
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
     width: 100%;
-    text-align: center;
-    border-bottom: none;
-    transition: border-bottom 0.2s ease;
   }
-  .pencil-text{
-    display: inline-block;
-    position: relative;
-    font-size: 25pt;
-    transform: scale(12);
-    bottom: 140px;
-    top: auto;
-    font-family: 'Courier New', Courier, monospace;
+  .progress-container {
+    width: 100%;
+    height: 8px;
+  }
+  .progress-bar {
+    height: 8px;
+    width: 0%;
+    border-radius: 0px 5px 5px 0px;
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: color_change 5s infinite alternate;
+  }
+  .intro{
+    height: 100vh;
+  }
+  .skills{
+    height: 100vh;
+  }
+  .projects{
+    height: 100vh;
+  }
+  .contact{
+    height: 100vh;
+  }
+  @keyframes color_change {
+    0% {
+      background-position: left;
+    }
+    100% {
+      background-position: right;
+    }
   }
 }
