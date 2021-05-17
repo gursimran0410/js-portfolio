@@ -20,10 +20,22 @@
       <div class="projects"></div>
       <div class="contact">
         <div class="form">
-          <label>Full Name</label><input type="text" required />
-          <label>Email</label><input type="email" required />
+          <input
+            type="text"
+            name="fullname"
+            placeholder="Enter full name"
+            rows="4"
+            required
+            autofocus
+          />
+          <input type="email" name="email" placeholder="Enter email" required />
+          <textarea
+            type="textarea"
+            placeholder="Enter your query here...."
+            maxlength="200"
+          ></textarea>
           <button>Submit</button>
-          <div class="social-links">
+          <!-- <div class="social-links">
             <a
               href="https://www.facebook.com/banwait.1998/"
               target="_blank"
@@ -54,11 +66,6 @@
                 src="https://firebasestorage.googleapis.com/v0/b/react-portfolio-e09cb.appspot.com/o/github-logo.png?alt=media&token=ddd19eee-8d42-4229-965e-9adeedf73393"
             /></a>
           </div>
-        </div>
-        <!-- <div>
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/react-portfolio-e09cb.appspot.com/o/undraw_contact_us_15o2.svg?alt=media&token=b9f94e92-d842-4b0a-8ac8-07673583746a"
-          />
         </div> -->
       </div>
     </div>
