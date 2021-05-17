@@ -6,7 +6,7 @@
 }
 
 #app{
-  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  // background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
   .header {
     position: fixed;
     top: 0;
@@ -39,6 +39,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('https://firebasestorage.googleapis.com/v0/b/react-portfolio-e09cb.appspot.com/o/method-draw-image.svg?alt=media&token=5d1ad768-5eb2-4960-96c8-5a0cc5fd1c3d');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 35%;
     .form{
       background-color: whitesmoke;
       height: 400px;
@@ -46,6 +50,11 @@
       border-radius: 10px;
       transition: box-shadow 0.5s linear;
       box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      display: flex;
+      flex-direction: column;
+      button{
+        background-color: #6C6EFF;
+      }
       .social-links{
         width: 100%;
         display: flex;
