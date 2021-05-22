@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   --gradient: linear-gradient(45deg, #845EC2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+  font-family: 'Roboto', sans-serif;
+  --basicShadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 #app{
@@ -36,52 +38,43 @@
   .contact{
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     background: url('https://firebasestorage.googleapis.com/v0/b/react-portfolio-e09cb.appspot.com/o/method-draw-image.svg?alt=media&token=5d1ad768-5eb2-4960-96c8-5a0cc5fd1c3d');
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 35%;
-    input{
-      outline: none;
-      padding: 10px;
-    }
-    textarea{
-      resize: none;
-      outline: none;
-      height: 85px;
-      padding: 10px;
-    }
-    .form{
-      background-color: whitesmoke;
-      height: 400px;
+    .contact-text{
       width: 500px;
-      border-radius: 10px;
-      transition: box-shadow 0.5s linear;
-      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      margin-left: 15vw;
+      color: #2f2e41;
       display: flex;
       flex-direction: column;
       row-gap: 20px;
-      padding: 20px;
-      button{
-        background-color: #6C6EFF;
-      }
-      .social-links{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        a{
-          text-decoration: none;
-          img{
-            height: 50px;
-            width: 50px;
-          }
+    }
+    .header-1{
+      font-size: 150px;
+      text-decoration: underline;
+      line-height: 1;
+    }
+    .social-links{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      column-gap: 20px;
+      margin-top: 10px;
+      a{
+        text-decoration: none;
+        cursor: pointer;
+        img{
+          height: 50px;
+          width: 50px;
+          transition: transform 0.25s linear;
+        }
+        img:hover{
+          transform: scale(1.5);
         }
       }
-    }
-    .form:hover{
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     }
   }
   @keyframes color_change {
@@ -90,6 +83,45 @@
     }
     100% {
       background-position: right;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .contact{
+      justify-content: flex-start;
+      background-position: bottom center;
+      background-size: 35vh;
+      flex-direction: column;
+      .contact-text{
+        margin-left: -10px;
+        transform: scale(0.5);
+        margin-top: calc(100% - 450px);
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) and (min-width: 481px) {
+    .contact{
+      justify-content: flex-start;
+      background-position: bottom center;
+      background-size: 35vh;
+      flex-direction: column;
+      .contact-text{
+        margin-left: -10px;
+        transform: scale(0.8);
+        margin-top: calc(100% - 768px);
+      }
+    }
+  }
+  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .contact{
+      justify-content: flex-start;
+      background-position: bottom center;
+      background-size: 35vh;
+      flex-direction: column;
+      .contact-text{
+        margin-left: -10px;
+        transform: scale(1);
+        margin-top: calc(100% - 950px);
+      }
     }
   }
 }
